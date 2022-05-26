@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>somar</title>
+    <style>
+        body {
+         margin: 0%;
+         height: 100vh;
+         box-sizing: border-box;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         background-color: rgb(224, 183, 248);
+        }
+        p{
+            font-size: 20vh;
+            margin: 0%;
+        }
+        button{
+            font-size: 45px;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="numero">0</p>
+        <button onclick="somar()">+</button>
+        <button onclick="zerar()">0</button>
+        <button onclick="menos()">-</button>
+    </div>
+    <script>
+        const P = document.getElementById("numero")
+        
+        function somar(){
+        const valoratual = parseInt(P.innerText)
+        P.innerText = valoratual + 1
+        }
+
+        function menos(){
+        const valoratual = parseInt(P.innerText)
+        P.innerText = valoratual - 1
+        }
+
+        function zerar(){
+            P.innerText = 0
+        }
+
+    </script>
+</body>
+</html>
